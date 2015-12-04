@@ -2,8 +2,8 @@
 #Get-AzureRmVMImageSku -Location westus -PublisherName new-signature  -Offer cloud-management-portal | Select PublisherName, Offer, Skus
 
 #Login-AzureRmAccount  
-$ResourceGroupName = "newSignature2"
-$machinename="newsignature2"
+$ResourceGroupName = "newSignature3"
+$machinename="newsignature3"
 $Location = "North Central US"
 
 ## Network
@@ -16,7 +16,7 @@ $VNetSubnetAddressPrefix = "10.0.0.0/24"
 ## Compute
 $VMName = "newsignaturenode1"
 $ComputerName = "newsignaturemode1"+"comp"
-$VMSize = "Standard_D14"
+$VMSize = "A2"
 $OSDiskName = $machinename +"osdisk"
 
 ## Ubuntu
